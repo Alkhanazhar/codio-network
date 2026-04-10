@@ -3,7 +3,7 @@ import { ArrowRightIcon } from 'lucide-react';
 
 export default function CallToActionSection() {
     return (
-        <section className='py-12 xl:py-24 my-20  bg-orange-300'>
+        <section className='py-12 xl:py-24 xl:my-32 my-24  bg-orange-300'>
             <div className="max-w-5xl mx-auto w-[90%] flex lg:flex-row xl:gap-20 gap-8  items-center justify-between">
 
             {/* <SectionTitle title='Try PrebuiltUI for Free' description='Let’s build something great together.' /> */}
