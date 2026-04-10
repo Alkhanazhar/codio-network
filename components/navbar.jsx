@@ -29,7 +29,9 @@ export default function Navbar() {
     return (
         <>
             <SplashScreen navbarLogoRef={navbarLogoRef} />
-            <nav className='sticky top-0 z-50 flex w-full items-center justify-between border-b border-gray-200/70 bg-white/50 px-4 py-3.5 backdrop-blur-md md:px-16 lg:px-24'>
+            <nav className='sticky top-0 z-50  border-b  border-gray-200/70 bg-white/50 px-4 py-3.5 backdrop-blur-md md:px-16 lg:px-24'>
+            <div className="max-w-7xl mx-auto flex items-center justify-between w-[90%] ">
+
                 <a ref={navbarLogoRef} href='https://prebuiltui.com?utm_source=slidex'>
                     {/* <Image src='/assets/logo.svg' alt='logo' className='h-7.5 w-auto' width={205} height={48} /> */}
                     <h2 className='text-xl xl:text-2xl font-bold text-black-500 leading-6 tracking-normal'><span className='text-orange-500'>C</span>odio <br /> <span className='text-orange-500'>N</span>etwork</h2>
@@ -74,6 +76,7 @@ export default function Navbar() {
                 <button onClick={() => setIsOpen(true)} className='transition active:scale-90 md:hidden'>
                     <MenuIcon className='size-6.5' />
                 </button>
+                </div>
             </nav>
 
             <div className={`fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-white/20 text-lg font-medium backdrop-blur-2xl transition duration-300 md:hidden ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
