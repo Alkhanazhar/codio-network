@@ -1,10 +1,9 @@
 'use client';
 
 import { MenuIcon, XIcon, ChevronDown, FileTextIcon, ImageUpIcon, FileVideo, AudioLines, LightbulbIcon } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useRef } from 'react';
-import { SplashScreen } from './splashscreen';
+// import { SplashScreen } from './splashscreen';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
