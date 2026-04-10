@@ -29,7 +29,7 @@ export default function Navbar() {
 
     return (
         <>
-            <SplashScreen navbarLogoRef={navbarLogoRef} />
+            {/* <SplashScreen navbarLogoRef={navbarLogoRef} /> */}
             <nav className='sticky top-0 z-50 flex w-full items-center justify-between border-b border-gray-200/70 bg-white/50 px-4 py-3.5 backdrop-blur-md md:px-16 lg:px-24'>
                 <a ref={navbarLogoRef} href='https://prebuiltui.com?utm_source=slidex'>
                     {/* <Image src='/assets/logo.svg' alt='logo' className='h-7.5 w-auto' width={205} height={48} /> */}
