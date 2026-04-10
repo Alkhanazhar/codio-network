@@ -45,13 +45,13 @@ export default function TechStackSection() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section className="py-20 flex flex-col items-center">
+    <section className=" flex flex-col items-center -mt-40">
       <SectionTitle
         title="Our Technology Stack"
         description="We use modern, scalable, and high-performance technologies to build powerful digital products."
       />
 
-      <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 w-[90%] max-w-6xl">
+      <div className="py-16 grid xl:py-24 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 w-[90%] max-w-6xl">
         {techStack.map((tech, index) => {
           const Icon = tech.icon;
 

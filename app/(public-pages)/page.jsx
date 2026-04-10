@@ -1,4 +1,5 @@
 import CallToActionSection from '@/sections/call-to-action-section';
+import TrustedSection from '@/sections/certifications-section';
 import FaqSection from '@/sections/faq-section';
 import TechStackSection from '@/sections/helping-clients';
 import HeroSection from '@/sections/hero-section';
@@ -11,10 +12,12 @@ import TestimonialsSection from '@/sections/tetimonials';
 
 export default function Page() {
     return (
-        <main className=''>
+        <main className='no-scrollbar'>
+
             <HeroSection />
             <HowItWorksSection />
             <HowWeWorkSection />
+            <TrustedSection />
             <TechStackSection />
             <MeetOurTeamSection />
             <TestimonialsSection />

@@ -1,5 +1,6 @@
 import SectionTitle from '@/components/section-title';
 import { StarIcon } from 'lucide-react';
+import Marquee from 'react-fast-marquee';
 
 export default function OurTestimonialSection() {
     const data = [
@@ -50,25 +51,32 @@ export default function OurTestimonialSection() {
     return (
         <section className='flex flex-col items-center justify-center'>
             <SectionTitle title='Reviews by Our Happy Customers' description='Hear from our satisfied customers about the benefits of using SlideX. We love hearing from our customers.' />
+            <div className='mt-12 w-[90%] mx-auto max-w-7xl relative'>
+                <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
 
-            <div className='mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
-                {data.map((item, index) => (
-                    <div key={index} className='w-full max-w-88 space-y-4 rounded-md border border-gray-200 bg-white p-3 text-gray-500 transition-all duration-300 hover:-translate-y-1'>
-                        <div className='flex items-center justify-between'>
-                            <div className='flex gap-1'>
-                                {...Array(item.rating)
-                                    .fill('')
-                                    .map((_, index) => <StarIcon key={index} className='size-4 fill-gray-800 text-gray-800' />)}
+                {/* Gradient Fade Right */}
+                <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" />
+
+                <Marquee autoFill>
+
+                    {data.map((item, index) => (
+                        <div key={index} className='w-full max-w-88 space-y-4 rounded-md border mx-4 border-gray-200 bg-white p-3 text-gray-500 transition-all duration-300 hover:-translate-y-1'>
+                            <div className='flex items-center justify-between'>
+                                <div className='flex gap-1'>
+                                    {...Array(item.rating)
+                                        .fill('')
+                                        .map((_, index) => <StarIcon key={index} className='size-4 fill-gray-800 text-gray-800' />)}
+                                </div>
+                                <p>{item.date}</p>
                             </div>
-                            <p>{item.date}</p>
+                            <p>“{item.review}”</p>
+                            <div className='flex items-center gap-2 pt-3'>
+                                <img className='h-8 w-8 rounded-full' src={item.image} alt={item.name} />
+                                <p className='font-medium text-gray-800'>{item.name}</p>
+                            </div>
                         </div>
-                        <p>“{item.review}”</p>
-                        <div className='flex items-center gap-2 pt-3'>
-                            <img className='h-8 w-8 rounded-full' src={item.image} alt={item.name} />
-                            <p className='font-medium text-gray-800'>{item.name}</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </Marquee>
             </div>
         </section>
     );

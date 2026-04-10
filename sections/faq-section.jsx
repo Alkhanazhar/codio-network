@@ -8,28 +8,34 @@ export default function FaqSection() {
     const [isOpen, setIsOpen] = useState(false);
     const data = [
         {
-            question: 'Do I need coding or design experience to use PrebuiltUI?',
-            answer: "Basic coding knowledge (HTML/CSS, Tailwind) helps, but advanced design skills aren't required. You can use components as-is or customize them.",
+            question: 'What services does Codio Network provide?',
+            answer:
+                'We provide web development, mobile app development, UI/UX design, and scalable digital solutions tailored to your business.',
         },
         {
-            question: 'What is PrebuiltUI and how does it help developers and designers?',
-            answer: 'PrebuiltUI provides ready-to-use, customizable UI components and templates, saving time for developers and designers.',
+            question: 'Do you build custom websites and applications?',
+            answer:
+                'Yes, all our solutions are custom-built based on your requirements, ensuring performance, scalability, and modern design.',
         },
         {
-            question: 'Can I use PrebuiltUI components in my existing project?',
-            answer: 'Yes, components can be integrated into HTML, React, Next.js, Vue, and other projects using Tailwind CSS.',
+            question: 'Which technologies do you use?',
+            answer:
+                'We use modern technologies like React, Next.js, Node.js, MongoDB, MERN stack, Flutter, and more.',
         },
         {
-            question: 'How customizable are the generated components?',
-            answer: 'Components are highly customizable with Tailwind utility classes, theming, and structural adjustments.',
+            question: 'How long does it take to complete a project?',
+            answer:
+                'Project timelines depend on complexity, but most projects are delivered within a few weeks with proper planning.',
         },
         {
-            question: 'Does PrebuiltUI support team collaboration?',
-            answer: "There's no clear documentation on built-in collaboration features. Check their support for team options.",
+            question: 'Do you provide support after project delivery?',
+            answer:
+                'Yes, we offer ongoing support, maintenance, and updates to ensure your product runs smoothly.',
         },
         {
-            question: 'Can I try PrebuiltUI before purchasing a plan?',
-            answer: 'Yes, you can try PrebuiltUI with full access to features.',
+            question: 'How can I get started with Codio Network?',
+            answer:
+                'You can contact us through our website, and we will guide you through the process from idea to execution.',
         },
     ];
 

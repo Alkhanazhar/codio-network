@@ -4,6 +4,30 @@
     --font-sans: 'Inter', sans-serif;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+@layer utilities {
+
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+
+html {
+    @apply scroll-smooth;
+}
+
 body {
     @apply bg-white text-gray-900 text-sm antialiased;
 }

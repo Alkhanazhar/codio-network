@@ -3,12 +3,13 @@
 import { MenuIcon, XIcon, ChevronDown, FileTextIcon, ImageUpIcon, FileVideo, AudioLines, LightbulbIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { SplashScreen } from './splashscreen';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null);
-
+    const navbarLogoRef = useRef(null);
     const links = [
         { name: 'Home', href: '/' },
         {
@@ -28,8 +29,9 @@ export default function Navbar() {
 
     return (
         <>
+            <SplashScreen navbarLogoRef={navbarLogoRef} />
             <nav className='sticky top-0 z-50 flex w-full items-center justify-between border-b border-gray-200/70 bg-white/50 px-4 py-3.5 backdrop-blur-md md:px-16 lg:px-24'>
-                <a href='https://prebuiltui.com?utm_source=slidex'>
+                <a ref={navbarLogoRef} href='https://prebuiltui.com?utm_source=slidex'>
                     {/* <Image src='/assets/logo.svg' alt='logo' className='h-7.5 w-auto' width={205} height={48} /> */}
                     <h2 className='text-xl xl:text-2xl font-bold text-black-500 leading-6 tracking-normal'><span className='text-orange-500'>C</span>odio <br /> <span className='text-orange-500'>N</span>etwork</h2>
                 </a>

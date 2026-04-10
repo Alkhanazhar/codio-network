@@ -33,7 +33,7 @@ const steps = [
 
 export default function HowWeWorkSection() {
   return (
-    <section className="py-4 flex flex-col items-center w-[90%] max-w-6xl mx-auto">
+    <section className=" my-24 mt-16 flex flex-col items-center  mx-auto">
       
       <SectionTitle
         title="How We Work"
@@ -41,7 +41,7 @@ export default function HowWeWorkSection() {
       />
 
       {/* Flow Line + Steps */}
-      <div className="relative mt-16 w-full max-w-6xl mb-16">
+      <div className="relative mt-16 w-full max-w-6xl pb-24">
         
         {/* Curved line (simple version) */}
         {/* <div className="absolute top-6 left-0 right-0 hidden md:block">
