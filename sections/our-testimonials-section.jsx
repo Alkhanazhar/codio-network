@@ -49,7 +49,7 @@ export default function OurTestimonialSection() {
 
     return (
         <section className='flex flex-col items-center justify-center'>
-            <SectionTitle title='Our Reviews by Happy Customers' description='Hear from our satisfied customers about the benefits of using SlideX. We love hearing from our customers.' />
+            <SectionTitle title='Reviews by Our Happy Customers' description='Hear from our satisfied customers about the benefits of using SlideX. We love hearing from our customers.' />
 
             <div className='mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
                 {data.map((item, index) => (

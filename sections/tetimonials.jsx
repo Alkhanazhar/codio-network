@@ -38,14 +38,14 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-24 flex flex-col items-center">
+    <section className="xl:py-24 flex flex-col items-center">
 
       <SectionTitle
         title="Our Testimonials"
         description="What our clients say about Codio Network and our services."
       />
 
-      <div className="mt-20 flex flex-col gap-16 w-full max-w-6xl">
+      <div className="mt-20 flex flex-col gap-16 w-[90%] max-w-6xl ">
         {testimonials.map((item, index) => {
           const isLeft = index % 2 === 0;
 

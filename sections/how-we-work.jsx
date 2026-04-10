@@ -33,7 +33,7 @@ const steps = [
 
 export default function HowWeWorkSection() {
   return (
-    <section className="py-4 flex flex-col items-center">
+    <section className="py-4 flex flex-col items-center w-[90%] max-w-6xl mx-auto">
       
       <SectionTitle
         title="How We Work"
@@ -57,7 +57,7 @@ export default function HowWeWorkSection() {
         </div> */}
 
         {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 ">
           {steps.map((step, index) => (
             <motion.div
               key={step.id}

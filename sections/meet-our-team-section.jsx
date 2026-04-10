@@ -3,17 +3,17 @@ import SectionTitle from '@/components/section-title';
 export default function MeetOurTeamSection() {
     const data = [
         {
-            name: 'Donald Jackman',
+            name: 'Azhar Khan',
             title: 'Founder & CEO',
             image: '/assets/team-user-1.png',
         },
         {
-            name: 'Michael Brown',
+            name: 'Aasif Azlaan',
             title: 'Head of Engineering',
             image: '/assets/team-user-2.png',
         },
         {
-            name: 'David Thompson',
+            name: 'Yasir Ali',
             title: 'Full-Stack Developer',
             image: '/assets/team-user-3.png',
         },
@@ -24,7 +24,7 @@ export default function MeetOurTeamSection() {
         },
     ];
     return (
-        <section className='flex flex-col items-center justify-center'>
+        <section className='flex flex-col items-center justify-center bg-orange-200 pb-20 xl:pb-40'>
             <SectionTitle title='Meet Our Team' description='Meet our team and discover how we can help you create the perfect slide using latest AI technologies.' />
             <div className='mt-12 flex flex-wrap items-center justify-center gap-8'>
                 {data.map((item, index) => (
