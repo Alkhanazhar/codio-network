@@ -145,7 +145,7 @@ export default function IndustriesSection() {
     {/* HOVER DESCRIPTION */}
   
   </div>
-  <p className="absolute  bottom-6 flex items-center py-3 px-2 bg-orange-50/10 backdrop-blur-2xl p-3 inset-x-3 rounded-2xl font-light  justify-center text-center text-sm text-gray-100 md:text-lg opacity-0 translate-y-8 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+  <p className="absolute  bottom-4 flex items-center py-3 px-2 bg-orange-50/10 backdrop-blur-2xl p-3 inset-x-3 rounded-2xl font-light  justify-center text-center text-sm text-gray-100 md:text-lg opacity-0 translate-y-8 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
       {item.description}
     </p>
   {/* 🔥 Border Glow */}
