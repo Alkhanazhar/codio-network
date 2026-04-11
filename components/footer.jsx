@@ -1,4 +1,4 @@
-import { DribbbleIcon, InstagramIcon, LinkedinIcon, TwitterIcon, YoutubeIcon } from 'lucide-react';
+import { DribbbleIcon, InstagramIcon, LinkedinIcon, TwitterIcon, XIcon, YoutubeIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -16,13 +16,14 @@ export default function Footer() {
                         <a href='https://www.youtube.com/@prebuiltui/' aria-label='YouTube' title='YouTube'>
                             <DribbbleIcon className='size-5 transition duration-200 hover:-translate-y-0.5' />
                         </a>
-                        <a href='https://www.instagram.com/prebuiltui/' aria-label='Instagram' title='Instagram'>
+                       
+                        <a href='https://www.instagram.com/codionetwork/' aria-label='Instagram' title='Instagram'>
                             <InstagramIcon className='size-5 transition duration-200 hover:-translate-y-0.5' />
                         </a>
-                        <a href='https://x.com/prebuiltui' aria-label='Twitter' title='Twitter'>
-                            <TwitterIcon className='size-5 transition duration-200 hover:-translate-y-0.5' />
+                        <a href='https://x.com/codionetwork' aria-label='Twitter' title='Twitter'>
+                            <XIcon className='size-5 transition duration-200 hover:-translate-y-0.5' />
                         </a>
-                        <a href='https://www.linkedin.com/company/prebuiltui/' aria-label='LinkedIn' title='LinkedIn'>
+                        <a href='https://www.linkedin.com/in/codio-network/' aria-label='LinkedIn' title='LinkedIn'>
                             <LinkedinIcon className='size-5 transition duration-200 hover:-translate-y-0.5' />
                         </a>
                     </div>
