@@ -12,6 +12,7 @@ import OurTestimonialsSection from '@/sections/our-testimonials-section';
 import TestimonialsSection from '@/sections/tetimonials';
 
 export default function Page() {
+    
     return (
         <main className='no-scrollbar'>
 

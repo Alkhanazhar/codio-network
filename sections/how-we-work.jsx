@@ -1,8 +1,5 @@
-'use client';
 
 import SectionTitle from '@/components/section-title';
-import { motion } from 'motion/react';
-import { filter } from 'motion/react-client';
 
 const steps = [
   {
@@ -57,14 +54,11 @@ export default function HowWeWorkSection() {
         </div> */}
 
         {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 ">
+        <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mx-auto">
           {steps.map((step, index) => (
-            <motion.div
+            <div
               key={step.id}
-              initial={{ opacity: 0, y: 40,filter: 'blur(10px)' }}
-              whileInView={{ opacity: 1, y: 0,filter: 'blur(0px)' }}
-              transition={{ delay: index * 0.2, duration: 0.6, ease: 'easeOut' }}
-              viewport={{ once: true }}
+            
               className="flex flex-col items-center text-center"
             >
               {/* Step Number */}
@@ -73,8 +67,7 @@ export default function HowWeWorkSection() {
               </div>
 
               {/* Image Card */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
+              <div
                 className="mt-6 w-full overflow-hidden rounded-xl shadow-lg"
               >
                 <img
@@ -82,7 +75,7 @@ export default function HowWeWorkSection() {
                   alt={step.title}
                   className="h-40 w-full object-cover"
                 />
-              </motion.div>
+              </div>
 
               {/* Content */}
               <h3 className="mt-4 text-lg font-semibold">
@@ -91,7 +84,7 @@ export default function HowWeWorkSection() {
               <p className="mt-2 text-gray-500 text-sm">
                 {step.description}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

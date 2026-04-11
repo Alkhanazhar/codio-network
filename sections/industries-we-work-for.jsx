@@ -100,7 +100,7 @@ const industries = [
 ];
 export default function IndustriesSection() {
   return (
-    <section className=" pb-40">
+    <section className=" pb-20 xl:pb-40 ">
       <SectionTitle
         title="Industries We Serve"
         description="We deliver specialized technology solutions for various industry needs."
@@ -114,7 +114,7 @@ export default function IndustriesSection() {
           return (
        <div
   key={i} 
-  className="group relative h-[340px] border-4 border-orange-500 hover:-translate-y-2 transition-all duration-500  aspect-square overflow-hidden hover:shadow-lg hover:shadow-orange-500/90 rounded-2xl mx-4  my-12 "
+  className="group relative h-[340px] border-4 border-orange-300 hover:-translate-y-2 transition-all duration-500  aspect-square overflow-hidden hover:shadow-lg hover:shadow-orange-500/90 rounded-2xl mx-4  my-12 "
 >
   {/* 🔥 Background Image */}
   <Image
@@ -149,7 +149,7 @@ export default function IndustriesSection() {
       {item.description}
     </p>
   {/* 🔥 Border Glow */}
-  <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 shadow-[0_0_40px_rgba(168,85,247,0.25)]" />
+  <div className="xl:absolute inset-0 rounded-2xl xl:opacity-0 opacity-100 group-hover:opacity-100 transition duration-500 shadow-[0_0_40px_rgba(168,85,247,0.25)]" />
 </div>
           );
         })}

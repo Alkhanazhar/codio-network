@@ -40,9 +40,9 @@ export default function FaqSection() {
     ];
 
     return (
-        <section className='flex flex-col items-center justify-center'>
+        <section className='flex flex-col items-center justify-center w-[90%] mx-auto'>
             <SectionTitle title="FAQ's" description="Looking for answers to your frequently asked questions? Check out our FAQ's section below to find." />
-            <div className='mx-auto mt-12 w-full max-w-xl'>
+            <div className='mt-12  max-w-xl '>
                 {data.map((item, index) => (
                     <div key={index} className='flex flex-col border-b border-gray-200 bg-white'>
                         <h3 className='flex cursor-pointer items-start justify-between gap-4 py-4 font-medium' onClick={() => setIsOpen(isOpen === index ? null : index)}>
