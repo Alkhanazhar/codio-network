@@ -13,17 +13,15 @@ export default function Footer() {
   Delivering innovative, scalable, and high-performance web and mobile solutions tailored to your business needs.
 </p>
                     <div className='mt-2 flex items-center gap-3 text-gray-400'>
-                        <a href='https://www.youtube.com/@prebuiltui/' aria-label='YouTube' title='YouTube'>
-                            <DribbbleIcon className='size-5 transition duration-200 hover:-translate-y-0.5' />
-                        </a>
+                        
                        
-                        <a href='https://www.instagram.com/codionetwork/' aria-label='Instagram' title='Instagram'>
+                        <a href='https://www.instagram.com/codionetwork/' target='_blank' aria-label='Instagram' title='Instagram'>
                             <InstagramIcon className='size-5 transition duration-200 hover:-translate-y-0.5' />
                         </a>
-                        <a href='https://x.com/codionetwork' aria-label='Twitter' title='Twitter'>
+                        <a href='https://x.com/codionetwork' target='_blank' aria-label='Twitter' title='Twitter'>
                             <XIcon className='size-5 transition duration-200 hover:-translate-y-0.5' />
                         </a>
-                        <a href='https://www.linkedin.com/in/codio-network/' aria-label='LinkedIn' title='LinkedIn'>
+                        <a href='https://www.linkedin.com/in/codio-network/' target='_blank' aria-label='LinkedIn' title='LinkedIn'>
                             <LinkedinIcon className='size-5 transition duration-200 hover:-translate-y-0.5' />
                         </a>
                     </div>
