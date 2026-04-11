@@ -114,7 +114,7 @@ export default function IndustriesSection() {
           return (
        <div
   key={i}
-  className="group relative h-[380px]   aspect-square overflow-hidden rounded-2xl mx-4 border mt-12 border-white/10"
+  className="group relative h-[380px]   aspect-6/7 overflow-hidden hover:shadow-lg hover:shadow-orange-500/90 rounded-2xl mx-4  my-12 "
 >
   {/* 🔥 Background Image */}
   <Image
@@ -145,7 +145,7 @@ export default function IndustriesSection() {
     {/* HOVER DESCRIPTION */}
   
   </div>
-  <p className="absolute  bottom-6 flex items-center py-3  justify-center text-center text-sm text-gray-100 md:text-xl opacity-0 translate-y-8 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+  <p className="absolute  bottom-6 flex items-center py-3 px-2 bg-orange-50/10 backdrop-blur-2xl p-3 inset-x-3 rounded-2xl font-light  justify-center text-center text-sm text-gray-100 md:text-lg opacity-0 translate-y-8 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
       {item.description}
     </p>
   {/* 🔥 Border Glow */}
