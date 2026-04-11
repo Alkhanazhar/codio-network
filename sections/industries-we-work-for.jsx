@@ -42,7 +42,7 @@ const industries = [
       "Modern eLearning platforms with interactive and scalable architecture.",
   },
   {
-    title: "Insurance",
+    title: "Insurance and Financial Services",
     icon: FaShieldAlt,
     image:
       "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop",
@@ -50,7 +50,7 @@ const industries = [
       "Digital insurance systems optimized for automation and customer experience.",
   },
   {
-    title: "Web Development",
+    title: "Web Development and Services",
     icon: FaGlobe,
     image:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
@@ -74,7 +74,7 @@ const industries = [
       "Custom AI agents and automation workflows to enhance business productivity.",
   },
   {
-    title: "E-commerce & Retail",
+    title: "E-commerce & Retail services",
     icon: FaShoppingCart,
     image:
       "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=1200&auto=format&fit=crop",
@@ -82,7 +82,7 @@ const industries = [
       "End-to-end eCommerce solutions with seamless shopping experiences.",
   },
   {
-    title: "SaaS & Startups",
+    title: "SaaS products & Startups ",
     icon: FaRocket,
     image:
       "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop",
@@ -113,8 +113,8 @@ export default function IndustriesSection() {
 
           return (
        <div
-  key={i}
-  className="group relative h-[380px]   aspect-6/7 overflow-hidden hover:shadow-lg hover:shadow-orange-500/90 rounded-2xl mx-4  my-12 "
+  key={i} 
+  className="group relative h-[340px] border-4 border-orange-500 hover:-translate-y-2 transition-all duration-500  aspect-square overflow-hidden hover:shadow-lg hover:shadow-orange-500/90 rounded-2xl mx-4  my-12 "
 >
   {/* 🔥 Background Image */}
   <Image
@@ -133,11 +133,11 @@ export default function IndustriesSection() {
 
     {/* TOP CONTENT */}
     <div className="flex items-center gap-4 flex-col">
-      <div className="text-purple-400 text-4xl drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]">
+      <div className="text-purple-400 text-4xl xl:text-5xl drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]">
         <Icon />
       </div>
 
-      <h4 className="text-white font-semibold text-lg  text-center leading-snug">
+      <h4 className="text-white font-semibold text-lg xl:text-2xl  text-center leading-snug">
         {item.title}
       </h4>
     </div>
