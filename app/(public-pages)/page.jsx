@@ -23,7 +23,7 @@ export default function Page() {
             <TechStackSection />
             <IndustriesSection />
             <MeetOurTeamSection />
-            <TestimonialsSection />
+            {/* <TestimonialsSection /> */}
             <OurTestimonialsSection />
             {/* <OurPricingSection /> */}
             <FaqSection />

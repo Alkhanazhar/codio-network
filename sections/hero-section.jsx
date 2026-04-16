@@ -1,10 +1,18 @@
 "use client"
 import { ArrowRightIcon, CheckIcon, ChevronRight } from 'lucide-react';
+import {FaRobot,FaCogs,FaGlobe,FaMobileAlt} from "react-icons/fa"
 import { motion } from 'motion/react';
 import Link from 'next/link';
 
 export default function HeroSection() {
     const specialFeatures = ['No credit card', '30 days free trial', 'Setup in 10 minutes'];
+    const services = [
+        { label: "Agentic AI", icon: FaRobot },
+        { label: "AI Integration & Automation", icon: FaCogs },
+        { label: "Web Applications", icon: FaGlobe },
+        { label: "Mobile Applications", icon: FaMobileAlt },
+    ];
+
 
     return (
         <section className='flex flex-col items-center justify-center px-4 md:px-16 lg:px-24 py-24 '>
@@ -16,7 +24,7 @@ export default function HeroSection() {
                 <path stroke='var(--color-white)' strokeOpacity='.5' d='M-15.227 573.66H1439.7M-15.227 164.029H1439.7' />
                 <circle cx='782.595' cy='411.166' r='308.334' stroke='var(--color-white)' strokeOpacity='.5' />
             </svg>
-            <motion.a  href='https://prebuiltui.com' className='mt-32  flex items-center gap-2 rounded-full border border-gray-100 bg-gray-50 text-xs px-3 py-1 xl:text-sm font-medium transition hover:bg-gray-50/80'>
+            <motion.a href='https://prebuiltui.com' className='mt-32  flex items-center gap-2 rounded-full border border-gray-100 bg-gray-50 text-xs px-3 py-1 xl:text-sm font-medium transition hover:bg-gray-50/80'>
                 <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <g clipPath='url(#a)' stroke='#1D293D' strokeWidth='1.5' strokeLinecap='round' strokeLinejoin='round'>
                         <path d='M6.626 10.333a1.33 1.33 0 0 0-.958-.958l-4.09-1.054a.333.333 0 0 1 0-.642l4.09-1.055a1.33 1.33 0 0 0 .958-.957l1.055-4.09a.333.333 0 0 1 .642 0l1.054 4.09a1.33 1.33 0 0 0 .958.958l4.09 1.054a.333.333 0 0 1 0 .642l-4.09 1.054a1.33 1.33 0 0 0-.958.958l-1.055 4.09a.334.334 0 0 1-.642 0zM13.336 2v2.667m1.331-1.334H12m-9.336 8v1.333M3.333 12H2' />
@@ -40,14 +48,15 @@ export default function HeroSection() {
                 <ArrowRightIcon className='size-5' />
             </Link>
 
-            {/* <div className='mt-12 flex flex-wrap items-center justify-center gap-4 text-gray-500 md:gap-14'>
-                {specialFeatures.map((feature, index) => (
+            <div className='mt-12 flex flex-wrap items-center justify-center gap-4 text-gray-500 md:gap-14'>
+                {services.map((service, index) => (
                     <p className='flex items-center gap-2' key={index}>
                         <CheckIcon className='size-5' />
-                        <span>{feature}</span>
+                        <span>{service.label}</span>
                     </p>
                 ))}
-            </div> */}
+            </div>
+      
         </section>
     );
 }

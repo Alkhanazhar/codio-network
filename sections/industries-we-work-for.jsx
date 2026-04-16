@@ -100,58 +100,62 @@ const industries = [
 ];
 export default function IndustriesSection() {
   return (
-    <section className=" pb-20 xl:pb-40 ">
-      <SectionTitle
-        title="Industries We Serve"
-        description="We deliver specialized technology solutions for various industry needs."
-      />
+    <section className="  relative py-12">
+        <div className="absolute inset-0 -z-10 p-8 aspect-video rounded-3xl w-[90%] mx-auto overflow-hidden shadow-2xl shadow-amber-900/10 ">
+            <div className="bg-white/10  absolute inset-0 z-1"></div>
+        <Image src="https://images.unsplash.com/photo-1634502795504-f0f685b62d8e?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background" fill className="object-cover object-bottom  opacity-90  pointer-events-none w-full  " />
+        </div>
+        <SectionTitle
+            title="Industries We Serve" 
+            description="We deliver specialized technology solutions for various industry needs."
+        />
 
-      <div className=" ">
+      <div className="">
         <Marquee autoFill speed={50} gradient={false} pauseOnHover={true}>
         {industries.map((item, i) => {
-          const Icon = item.icon;
+        const Icon = item.icon;
+        return (
+            <div
+            key={i}
+            className="group relative h-[420px] aspect-4/5 rounded-2xl overflow-hidden mx-4 my-10 cursor-pointer"
+            >
+            {/* 🔥 Background Image */}
+            <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover group-hover:scale-110 transition duration-700 ease-out"
+            />
 
-          return (
-       <div
-  key={i} 
-  className="group relative h-[340px] border-4 border-orange-300 hover:-translate-y-2 transition-all duration-500  aspect-square overflow-hidden hover:shadow-lg hover:shadow-orange-500/90 rounded-2xl mx-4  my-12 "
->
-  {/* 🔥 Background Image */}
-  <Image
-    src={item.image}
-    width={400}
-    height={400}
-    alt={item.title}
-    className="absolute inset-0 h-full w-full object-cover  transition duration-700 group-hover:scale-110"
-  />
+            {/* 🔥 Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-white/30 to-black/40 via-transparent" />
 
-  {/* 🔥 Dark Overlay */}
-  <div className="absolute inset-0 bg-black/70 group-hover:bg-black/60 transition duration-500" />
+            {/* 🔥 Content */}
+            <div className="absolute inset-0 p-6 flex flex-col justify-between z-10">
+                
+                {/* TOP */}
+                <div className="flex flex-col items-start gap-4">
+                <div className="text-white text-4xl p-3 bg-white/10 backdrop-blur-lg rounded-xl border border-white/20">
+                    <Icon />
+                </div>
 
-  {/* 🔥 Glass Content Card */}
-  <div className="absolute inset-4 rounded-xl border border-white/20 h-fit bg-white/5 backdrop-blur-xl p-6 flex flex-col justify-between">
+                <h4 className="text-white font-semibold text-xl text-shadow-2xs leading-snug">
+                    {item.title}
+                </h4>
+                </div>
 
-    {/* TOP CONTENT */}
-    <div className="flex items-center gap-4 flex-col">
-      <div className="text-purple-400 text-4xl xl:text-5xl drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]">
-        <Icon />
-      </div>
-
-      <h4 className="text-white font-semibold text-lg xl:text-2xl  text-center leading-snug">
-        {item.title}
-      </h4>
-    </div>
-
-    {/* HOVER DESCRIPTION */}
-  
-  </div>
-  <p className="absolute  bottom-4 flex items-center py-3 px-2 bg-orange-50/10 backdrop-blur-2xl p-3 inset-x-3 rounded-2xl font-light  justify-center text-center text-sm text-gray-100 md:text-lg opacity-0 translate-y-8 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-      {item.description}
-    </p>
-  {/* 🔥 Border Glow */}
-  <div className="xl:absolute inset-0 rounded-2xl xl:opacity-0 opacity-100 group-hover:opacity-100 transition duration-500 shadow-[0_0_40px_rgba(168,85,247,0.25)]" />
+                {/* DESCRIPTION */}
+              <div className="opacity-100">
+  <p className="text-sm text-gray-900 leading-relaxed bg-white/20 backdrop-blur-xl p-4 text-shadow-2xs text-shadow-amber-50/10 rounded-xl border border-white/30">
+    "{item.description}"
+  </p>
 </div>
-          );
+            </div>
+
+            {/* 🔥 Glow Border */}
+            <div className="absolute inset-0 rounded-2xl ring-1 ring-white/10 group-hover:ring-orange-400/70 transition duration-100 blur border" />
+            </div>
+        );
         })}
         </Marquee>
       </div>
