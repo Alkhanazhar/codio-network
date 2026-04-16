@@ -49,7 +49,7 @@ export default function OurTestimonialSection() {
     ];
 
     return (
-        <section className='flex flex-col items-center justify-center w-[90%] mx-auto py-12'>
+        <section className='flex flex-col items-center justify-center w-[90%] mx-auto py-20'>
             <SectionTitle title='Reviews by Our Happy Customers' description='Hear from our satisfied customers about the benefits of using SlideX. We love hearing from our customers.' />
             <div className='mt-16 w-[90%] mx-auto max-w-7xl relative'>
                 <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />

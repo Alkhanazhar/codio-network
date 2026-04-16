@@ -22,14 +22,14 @@ export default function TrustedSection() {
             />
 
            
-            <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
+         
+            {/* Marquee */}
+            <div className="mt-16 overflow-hidden relative w-full">
+                 <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
 
             {/* Gradient Fade Right */}
             <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" /> 
 
-            {/* Marquee */}
-            <div className="mt-16 overflow-hidden ">
-              
                     <Marquee autoFill>
 
                         {logos.map((logo, index) => (

@@ -10,6 +10,7 @@ import MeetOurTeamSection from '@/sections/meet-our-team-section';
 import OurPricingSection from '@/sections/our-pricing-section';
 import OurTestimonialsSection from '@/sections/our-testimonials-section';
 import TestimonialsSection from '@/sections/tetimonials';
+import { WhyChooseUsSection } from '@/sections/why-choose-us';
 
 export default function Page() {
     
@@ -19,6 +20,7 @@ export default function Page() {
             <HeroSection />
             <HowItWorksSection />
             <HowWeWorkSection />
+            <WhyChooseUsSection />
             <TrustedSection />
             <TechStackSection />
             <IndustriesSection />
