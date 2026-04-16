@@ -24,7 +24,7 @@ export default function MeetOurTeamSection() {
         },
     ];
     return (
-        <section className='flex flex-col items-center justify-center  px-4 pt-40 pb-12'>
+        <section className='flex flex-col items-center justify-center  px-4 pt-20 xl:pt-40 pb-12'>
             <SectionTitle title='Meet Our Team' description='Meet our team and discover how we can help you create the perfect slide using latest AI technologies.' />
             <div className='mt-12 xl:mt-16 flex flex-wrap items-center justify-center gap-8'>
                 {data.map((item, index) => (

@@ -101,7 +101,7 @@ const industries = [
 export default function IndustriesSection() {
   return (
     <section className="  relative py-12">
-        <div className="absolute inset-0 -z-10 p-8 aspect-video rounded-3xl w-[90%] mx-auto overflow-hidden shadow-2xl shadow-amber-900/10 ">
+        <div className="absolute inset-0 -z-10 p-8  rounded-3xl w-[90%] mx-auto overflow-hidden shadow-2xl shadow-amber-900/10 ">
             <div className="bg-white/10  absolute inset-0 z-1"></div>
         <Image src="https://images.unsplash.com/photo-1634502795504-f0f685b62d8e?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background" fill className="object-cover object-bottom  opacity-90  pointer-events-none w-full  " />
         </div>
@@ -110,14 +110,14 @@ export default function IndustriesSection() {
             description="We deliver specialized technology solutions for various industry needs."
         />
 
-      <div className="">
+      <div className=" w-[90%] mx-auto mt-16  relative">
         <Marquee autoFill speed={50} gradient={false} pauseOnHover={true}>
         {industries.map((item, i) => {
         const Icon = item.icon;
         return (
             <div
             key={i}
-            className="group relative h-[420px] aspect-4/5 rounded-2xl overflow-hidden mx-4 my-10 cursor-pointer"
+            className="group relative h-96 xl:h-[420px] aspect-4/5 rounded-2xl overflow-hidden mx-4 my-10 cursor-pointer"
             >
             {/* 🔥 Background Image */}
             <Image
@@ -135,7 +135,7 @@ export default function IndustriesSection() {
                 
                 {/* TOP */}
                 <div className="flex flex-col items-start gap-4">
-                <div className="text-white text-4xl p-3 bg-white/10 backdrop-blur-lg rounded-xl border border-white/20">
+                <div className="text-white text-2xl font-medium xl:text-4xl p-3 bg-white/10 backdrop-blur-lg rounded-xl border border-white/20">
                     <Icon />
                 </div>
 
