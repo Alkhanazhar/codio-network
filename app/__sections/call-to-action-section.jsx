@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function CallToActionSection() {
     return (
-        <section className='py-12 xl:py-24 xl:my-32 md:my-24 mt-32  bg-orange-300'>
+        <section className='py-12 xl:py-24 mt-24   bg-orange-300'>
             <div className="max-w-5xl mx-auto w-[90%] flex lg:flex-row flex-col xl:gap-20 gap-8  items-center justify-between">
 
                 <div className=' flex flex-col items-center justify-center'>

@@ -18,7 +18,7 @@ export default function Page() {
             <HeroSection />
             <HowItWorksSection />
             <HowWeWorkSection />
-            <WhyChooseUsSection />
+            {/* <WhyChooseUsSection /> */}
             <TrustedSection />
             <TechStackSection />
             <IndustriesSection />
