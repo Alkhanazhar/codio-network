@@ -1,5 +1,4 @@
 import { DribbbleIcon, InstagramIcon, LinkedinIcon, TwitterIcon, XIcon, YoutubeIcon } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -56,7 +55,7 @@ export default function Footer() {
             </div>
             <div className='mt-6 flex flex-col items-center justify-between gap-4 border-t border-gray-200 py-4 md:flex-row'>
                 <p className='text-center'>
-                    Copyright 2025 © <a href='https://prebuiltui.com?utm_source=slidex'>Codio Network</a> All Right Reserved.
+                    Copyright 2025 © <Link href='/contact-us'>Codio Network</Link> All Right Reserved.
                 </p>
                 <div className='flex items-center gap-6'>
                     <Link href='#privacy-policy' className='transition duration-200 hover:text-black' aria-label='Privacy Policy' title='Privacy Policy'>

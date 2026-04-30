@@ -1,6 +1,6 @@
 'use client';
 
-import SectionTitle from '@/components/section-title';
+import SectionTitle from '@/app/_components/section-title';
 import { motion } from 'framer-motion';
 
 const testimonials = [
@@ -56,9 +56,8 @@ export default function TestimonialsSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className={`flex flex-col md:flex-row items-center gap-10 ${
-                !isLeft ? 'md:flex-row-reverse' : ''
-              }`}
+              className={`flex flex-col md:flex-row items-center gap-10 ${!isLeft ? 'md:flex-row-reverse' : ''
+                }`}
             >
               {/* Image */}
               <motion.div

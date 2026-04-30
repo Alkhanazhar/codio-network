@@ -1,6 +1,6 @@
 'use client';
 
-import SectionTitle from '@/components/section-title';
+import SectionTitle from '@/app/_components/section-title';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
@@ -21,31 +21,31 @@ export default function TrustedSection() {
                 description="We collaborate with leading platforms and organizations to deliver reliable and scalable solutions."
             />
 
-           
-         
+
+
             {/* Marquee */}
             <div className="mt-16 overflow-hidden relative w-full">
-                 <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
+                <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
 
-            {/* Gradient Fade Right */}
-            <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" /> 
+                {/* Gradient Fade Right */}
+                <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" />
 
-                    <Marquee autoFill>
+                <Marquee autoFill>
 
-                        {logos.map((logo, index) => (
-                            <div
-                                key={index}
-                                className="flex items-center justify-center  mx-4 "
-                            >
-                                <Image
-                                    src={logo}
-                                    alt="logo"
-                                    className="h-12 object-contain transition duration-300"
-                                    width={200} height={40}
-                                />
-                            </div>
-                        ))}
-                    </Marquee>
+                    {logos.map((logo, index) => (
+                        <div
+                            key={index}
+                            className="flex items-center justify-center  mx-4 "
+                        >
+                            <Image
+                                src={logo}
+                                alt="logo"
+                                className="h-12 object-contain transition duration-300"
+                                width={200} height={40}
+                            />
+                        </div>
+                    ))}
+                </Marquee>
             </div>
         </section>
     );

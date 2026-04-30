@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
-import LenisScroll from '@/components/lenis-scroll';
+import LenisScroll from '@/app/_components/lenis-scroll';
 
 const inter = Inter({
     subsets: ['latin'],

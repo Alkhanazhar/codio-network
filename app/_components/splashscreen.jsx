@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence, Variants } from "motion/react";
+import Link from "next/link";
 
 
 export const SplashScreen = ({ navbarLogoRef }) => {
@@ -122,10 +123,10 @@ export const SplashScreen = ({ navbarLogoRef }) => {
                         style={{ position: "relative", zIndex: 1 }}
                     >
                         {/* <Logo className={} /> */}
-                          <a ref={navbarLogoRef} href='https://prebuiltui.com?utm_source=slidex' className={isMobile ? "scale-90" : "scale-100"}>
+                          <Link ref={navbarLogoRef} href='/' className={isMobile ? "scale-90" : "scale-100"}>
                     {/* <Image src='/assets/logo.svg' alt='logo' className='h-7.5 w-auto' width={205} height={48} /> */}
                     <h2 className='text-xl xl:text-2xl font-bold text-black-500 leading-6 tracking-normal'><span className='text-orange-500'>C</span>odio <br /> <span className='text-orange-500'>N</span>etwork</h2>
-                </a>
+                </Link>
                     </motion.div>
                 </motion.div>
             )}

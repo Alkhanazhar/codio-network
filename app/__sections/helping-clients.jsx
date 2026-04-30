@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import SectionTitle from '@/components/section-title';
+import SectionTitle from '@/app/_components/section-title';
 import { motion } from 'framer-motion';
 
 import {

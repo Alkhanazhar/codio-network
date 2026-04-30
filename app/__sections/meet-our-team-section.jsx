@@ -1,4 +1,4 @@
-import SectionTitle from '@/components/section-title';
+import SectionTitle from '@/app/_components/section-title';
 
 export default function MeetOurTeamSection() {
     const data = [

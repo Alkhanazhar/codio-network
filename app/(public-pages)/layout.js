@@ -1,6 +1,6 @@
-import Banner from '@/components/banner';
-import Footer from '@/components/footer';
-import Navbar from '@/components/navbar';
+import Banner from "../_components/banner";
+import Footer from "../_components/footer";
+import Navbar from "../_components/navbar";
 
 export const metadata = {
     title: 'Codio Network | Web & Mobile App Development Company',

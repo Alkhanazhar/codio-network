@@ -1,6 +1,6 @@
 'use client';
 
-import SectionTitle from '@/components/section-title';
+import SectionTitle from '@/app/_components/section-title';
 import { MinusIcon, PlusIcon } from 'lucide-react';
 import { useState } from 'react';
 

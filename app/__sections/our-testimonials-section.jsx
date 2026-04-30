@@ -1,4 +1,4 @@
-import SectionTitle from '@/components/section-title';
+import SectionTitle from '@/app/_components/section-title';
 import { StarIcon } from 'lucide-react';
 import Marquee from 'react-fast-marquee';
 
@@ -39,13 +39,13 @@ export default function OurTestimonialSection() {
             rating: 5,
             image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&h=100&auto=format&fit=crop',
         },
-        {
-            review: 'Brilliantly structured components with clean, modern styling. Makes development a joy and design updates super quick.',
-            name: 'Ava Patel',
-            date: '01 Nov 2025',
-            rating: 5,
-            image: 'https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/userImage/userImage1.png',
-        },
+        // {
+        //     review: 'Brilliantly structured components with clean, modern styling. Makes development a joy and design updates super quick.',
+        //     name: 'Ava Patel',
+        //     date: '01 Nov 2025',
+        //     rating: 5,
+        //     image: 'https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/userImage/userImage1.png',
+        // },
     ];
 
     return (

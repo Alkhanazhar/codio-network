@@ -1,6 +1,6 @@
 "use client";
 
-import SectionTitle from "@/components/section-title";
+import SectionTitle from "@/app/_components/section-title";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -12,9 +12,9 @@ const features = [
     img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width={16} height={16}>
-        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-        <path d="M2 17l10 5 10-5"/>
-        <path d="M2 12l10 5 10-5"/>
+        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+        <path d="M2 17l10 5 10-5" />
+        <path d="M2 12l10 5 10-5" />
       </svg>
     ),
   },
@@ -25,9 +25,9 @@ const features = [
     img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width={16} height={16}>
-        <circle cx="12" cy="12" r="10"/>
-        <line x1="2" y1="12" x2="22" y2="12"/>
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        <circle cx="12" cy="12" r="10" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
       </svg>
     ),
   },
@@ -38,8 +38,8 @@ const features = [
     img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width={16} height={16}>
-        <polyline points="16 18 22 12 16 6"/>
-        <polyline points="8 6 2 12 8 18"/>
+        <polyline points="16 18 22 12 16 6" />
+        <polyline points="8 6 2 12 8 18" />
       </svg>
     ),
   },
@@ -50,8 +50,8 @@ const features = [
     img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width={16} height={16}>
-        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-        <line x1="12" y1="18" x2="12.01" y2="18"/>
+        <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+        <line x1="12" y1="18" x2="12.01" y2="18" />
       </svg>
     ),
   },
@@ -62,7 +62,7 @@ const features = [
     img: "https://images.unsplash.com/photo-1521791136064-7986c2920216",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width={16} height={16}>
-        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
       </svg>
     ),
   },
@@ -73,16 +73,16 @@ export const WhyChooseUsSection = () => {
     <section className="flex flex-col items-center justify-center w-[92%] sm:w-[90%] mx-auto py-16 sm:py-20 xl:-mt-40 -mt-16">
 
       {/* Header */}
-       
 
-        <SectionTitle
-          title={
-            <>
-              Why Choose <span className="text-[#D85A30]">Us?</span>
-            </>
-          }
-          description="We bring 5+ years of experience delivering high-quality web & mobile solutions for international clients."
-        />
+
+      <SectionTitle
+        title={
+          <>
+            Why Choose <span className="text-[#D85A30]">Us?</span>
+          </>
+        }
+        description="We bring 5+ years of experience delivering high-quality web & mobile solutions for international clients."
+      />
 
       {/* Cards Track */}
       <div className="w-[90%] flex gap-4 sm:gap-5 overflow-x-auto pb-5 snap-x snap-mandatory mx-auto  scrollbar-hide mt-16">

@@ -32,10 +32,10 @@ export default function Navbar() {
             <nav className='sticky top-0 z-50  border-b  border-gray-200/70 bg-white/50 px-4 py-3.5 backdrop-blur-md md:px-16 lg:px-24'>
             <div className="max-w-7xl mx-auto flex items-center justify-between w-[90%] ">
 
-                <a ref={navbarLogoRef} href='https://prebuiltui.com?utm_source=slidex'>
+                <Link ref={navbarLogoRef} href='/'>
                     {/* <Image src='/assets/logo.svg' alt='logo' className='h-7.5 w-auto' width={205} height={48} /> */}
                     <h2 className='text-xl xl:text-2xl font-bold text-black-500 leading-6 tracking-normal'><span className='text-orange-500'>C</span>odio <br /> <span className='text-orange-500'>N</span>etwork</h2>
-                </a>
+                </Link>
 
                 <div className='hidden items-center space-x-6 text-gray-700 md:flex'>
                     {links.map((link) => link.subLinks ? (
@@ -69,7 +69,7 @@ export default function Navbar() {
                     ))}
                 </div>
 
-                <Link href='/' className='hidden rounded-full bg-gray-900 px-8 py-2.5 font-medium text-white transition hover:opacity-90 md:inline-block'>
+                <Link href='/contact-us' className='hidden rounded-full bg-gray-900 px-8 py-2.5 font-medium text-white transition hover:opacity-90 md:inline-block'>
                     Book a Call
                 </Link>
 
@@ -106,7 +106,7 @@ export default function Navbar() {
                     </div>
                 ))}
 
-                <Link href='/' className='rounded-full bg-gray-900 px-8 py-2.5 font-medium text-white transition hover:opacity-90' onClick={() => setIsOpen(false)}>
+                <Link href='/contact-us' className='rounded-full bg-gray-900 px-8 py-2.5 font-medium text-white transition hover:opacity-90' onClick={() => setIsOpen(false)}>
                     Book a Call
                 </Link>
 

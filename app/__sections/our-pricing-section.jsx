@@ -1,4 +1,4 @@
-import SectionTitle from '@/components/section-title';
+import SectionTitle from '@/app/_components/section-title';
 import { ArrowRightIcon, CheckIcon } from 'lucide-react';
 import Link from 'next/link';
 

@@ -1,5 +1,5 @@
 
-import SectionTitle from '@/components/section-title';
+import SectionTitle from '@/app/_components/section-title';
 
 const steps = [
   {
@@ -31,7 +31,7 @@ const steps = [
 export default function HowWeWorkSection() {
   return (
     <section className=" my-24 mt-16 flex flex-col items-center  mx-auto">
-      
+
       <SectionTitle
         title="How We Work"
         description="Our streamlined process ensures your project moves smoothly from concept to launch."
@@ -39,7 +39,7 @@ export default function HowWeWorkSection() {
 
       {/* Flow Line + Steps */}
       <div className="relative mt-16 w-full max-w-6xl pb-24">
-        
+
         {/* Curved line (simple version) */}
         {/* <div className="absolute top-6 left-0 right-0 hidden md:block">
           <svg width="100%" height="60">
@@ -58,7 +58,7 @@ export default function HowWeWorkSection() {
           {steps.map((step, index) => (
             <div
               key={step.id}
-            
+
               className="flex flex-col items-center text-center"
             >
               {/* Step Number */}
